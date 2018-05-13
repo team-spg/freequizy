@@ -94,6 +94,12 @@ div.authorization_block form{
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 	}
+	#btn_last_nav{
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}//////1 ta tepaga
 	div.header button{
 		display: block;
 		border: 1px solid #111111;
@@ -112,13 +118,7 @@ div.authorization_block form{
 		margin-top: -1px;
 		background: linear-gradient(to bottom, #2F2F2F, #222222);
 		width: 100%;
-	}
-	#btn_last_nav{
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		border-bottom-left-radius: 4px;
-		border-bottom-right-radius: 4px;
-	}
+	}///////
 }
 div.authorization_block form ul{
 	margin: 0;
@@ -183,12 +183,11 @@ div.quiz ul{
 div.quiz ul label{
 	display: block;
 }
-div.quiz ul li{
-	list-style: none;
-}
 #number, #question, #letter, #radio_a, #radio_b, #radio_c, #radio_d, #variant_a, #variant_b, #variant_c, #variant_d{
 	display: inline;
 }
+div.quiz ul li{
+	list-style: none;
 div.controls{
 	text-align: center;
 }
