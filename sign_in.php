@@ -8,7 +8,6 @@
 		<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/login.js"></script>
 	</head>
 	<body>

@@ -7,7 +7,7 @@
 	if(empty($_SESSION['admin'])){
 		header('location: index.php');
 	}
-	if(empty($_SESSION['new_quiz'])){
+	if(empty($_SESSION['edit_quiz'])){
 		header('location: new.php');
 	}
 ?>
@@ -21,7 +21,6 @@
 		<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/edit.js"></script>
 	</head>
 	<body>
