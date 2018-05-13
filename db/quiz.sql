@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 07 2018 г., 07:27
+-- Время создания: Май 13 2018 г., 11:52
 -- Версия сервера: 5.6.26
 -- Версия PHP: 5.6.12
 
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Дамп данных таблицы `user`
@@ -58,7 +58,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`) VALUES
 (1, 'admin', '123', 'politurin@mail.ru'),
-(2, 'Islomjon', '19960901', 'islomjonakhmadjonov@gmail.com');
+(2, 'Islomjon', '19960901', 'islomjonakhmadjonov@gmail.com'),
+(3, 'Mumtozbek', '11100', 'oltinsahifa@gmail.com');
 
 --
 -- Индексы сохранённых таблиц
@@ -78,7 +79,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
