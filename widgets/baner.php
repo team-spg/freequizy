@@ -1,1 +1,0 @@
-<img id="baner" src="img/6.png"/>
