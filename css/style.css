@@ -4,7 +4,7 @@
     font-family: Actor;
     src: url(../fonts/Actor.ttf);
 }
-p, label, li, h1{
+p, label, li, h1, table{
 	font-family: Actor;
 }
 body{
@@ -18,6 +18,22 @@ div.wrapper{
 	margin-left: auto;
 	margin-right: auto;
 }
+#load{
+	height: 100%;
+	width: 100%;
+	max-width: 480px;
+	position: fixed;
+	background: url(../img/loading.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#pofile_info{
+	margin: 0;
+}
+#content{
+	z-index: -1px;
+	height: auto;
+}
 div.header, div.footer{
 	margin: 0;
 	padding: 20px;
@@ -25,6 +41,9 @@ div.header, div.footer{
 	color: #646464;
 	text-shadow: 0px 1px 1px black;
 	text-align: center;
+}
+#undecorated_link{
+	text-decoration: none;
 }
 #btn_first_nav{
 	margin-left: 0;
@@ -48,6 +67,8 @@ div.header button{
 	padding-right: 10;
 	padding-left: 10;
 	margin-left: -5px;
+	margin-top: 0;
+	margin-bottom: 0;
 	background: linear-gradient(to bottom, #2F2F2F, #222222);
 }
 #btn_last_nav{
@@ -59,14 +80,13 @@ div.header button{
 #baner{
 	max-width: 100%;
     height: auto;
-	transition: 0.3s all;
 }
-div.authorization_block{
+div.block{
 	padding: 20px;
 	background-color: white;
 	overflow: auto;
 }
-div.authorization_block form{
+div.block form.reception{
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 20px;
@@ -78,7 +98,7 @@ div.authorization_block form{
 	width: 200px;
 }
 @media (max-width:360px) {
-	div.authorization_block form{
+	div.block form.reception{
 		margin: 0;
 		padding: 0;
 		float: right;
@@ -120,15 +140,15 @@ div.authorization_block form{
 		border-bottom-right-radius: 4px;
 	}
 }
-div.authorization_block form ul{
+div.block form.reception ul{
 	margin: 0;
 	padding: 0;
 }
-div.authorization_block form ul li{
+div.block form.reception ul li{
 	list-style: none;
 	padding-bottom: 10px;
 }
-div.authorization_block form ul li input[type="text"],div.authorization_block form ul li input[type="password"]{
+div.block form.reception ul li input[type="text"],div.block form.reception ul li input[type="password"]{
 	width: 100%;
 }
 #heading{
@@ -136,11 +156,29 @@ div.authorization_block form ul li input[type="text"],div.authorization_block fo
 	text-align: center;
 	margin-top: 0;
 }
+#warning_message{
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 4px solid darkred;
+	color: darkred;
+	background-color: red;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#success_message{
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 4px solid green;
+	color: green;
+	background-color: lightgreen;
+	font-weight: bold;
+	border-radius: 10px;
+}
 #notify{
 	margin: 0;
 	padding: 0;
 }
-div.teem{
+#teem, #member{
 	padding: 20px;
 	background-color: cadetblue;
 }
@@ -159,6 +197,7 @@ div.member_block{
 	font-weight: bold;
 	color: white;
 	text-align: center;
+	margin-top: 0;
 }
 #member_info{
 	color: white;
@@ -170,12 +209,26 @@ div.member_block{
 #name{
 	font-weight: bold;
 }
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+table th{
+	color: white;
+	background-color: black;
+}
+table td{
+	text-align: center;
+}
+table tr:nth-of-type(even){
+	background-color: whitesmoke;
+}
+table tr:nth-of-type(odd){
+	background-color: gainsboro;
+}
+
 
 /*quiz*/
-div.conteiner{
-	padding: 20px;
-	background-color: white;
-}
 div.quiz ul{
 	margin: 0;
 	padding: 0;
@@ -211,8 +264,10 @@ button, input[type="submit"]{
 	padding-bottom: 5;
 	padding-right: 10;
 	padding-left: 10;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], textarea{
 	border-radius: 2px;
 	border: 1px solid gray;
 	box-shadow: 0px 1px 1px lightgray inset;
@@ -222,4 +277,19 @@ input[type="text"], input[type="password"]{
 	padding-bottom: 5;
 	padding-right: 10;
 	padding-left: 10;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+form[name="edit"]{
+	text-align: center;
+}
+form[name="edit"] textarea{
+	resize: none;
+}
+form[name="edit"] textarea[name="question"]{
+	width: 100%;
+}
+img.info_img{
+	max-width: 100%;
+    height: auto;
 }
