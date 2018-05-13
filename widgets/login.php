@@ -1,11 +1,12 @@
-<div class="authorization_block">
+<div class="block">
 	<p id="heading">Login</p>
-	<form action="#" method="GET">
+	<form class="reception" action="sign_in.php" method="POST" name="login">
 		<ul>
-			<label><li><input type="text" placeholder="Enter Name"/></li><label>
-			<label><li><input type="password" placeholder="Enter Password"/></li><label>
-			<label><li><input type="checkbox"/> Remember me</li><label>
-			<label><li><input type="submit" value="Sign in"/></li><label>
+			<label><li><input name="username" type="text" placeholder="Enter Name" value="<?php if(isset($_COOKIE['member_name'])){ echo $_COOKIE['member_name']; }?>"/></li><label>
+			<label><li><input name="password" type="password" placeholder="Enter Password" value="<?php if(isset($_COOKIE['member_password'])){ echo $_COOKIE['member_password']; }?>"/></li><label>
+			<label><li><input name="remember" type="checkbox" <?php if(isset($_COOKIE['member_name'])){ ?> checked <?php } ?>/> Remember me</li><label>
+			<label><li><input name="sign_in" type="submit" value="Sign in"/></li><label>
+			<label><li>No eccount? <a href="sign_up.php">Sign Up</a></li><label>
 		</ul>
 	</form>
 	<p id="notify">
