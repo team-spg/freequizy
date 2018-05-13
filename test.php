@@ -14,13 +14,12 @@
 	$answer = array();
 	
 	if(isset($_GET['selected'])){
-		$con = mysqli_connect("localhost", "root", "", "quiz_resource");
 		$quiz = $_GET['selected'];
 		
 		//question collect
 		$count = 0;
 		$sql_select = "SELECT question FROM $quiz";
-		$result = mysqli_query($con, $sql_select);
+		$result = mysqli_query($connection_resource, $sql_select);
 		if(mysqli_num_rows($result) > 0){
 			while($question_data = mysqli_fetch_array($result)){
 				$question[$count] = $question_data[0];
@@ -31,7 +30,7 @@
 		//answer collect
 		$count = 0;
 		$sql_select = "SELECT answer FROM $quiz";
-		$result = mysqli_query($con, $sql_select);
+		$result = mysqli_query($connection_resource, $sql_select);
 		if(mysqli_num_rows($result) > 0){
 			while($answer_data = mysqli_fetch_array($result)){
 				$answer[$count] = $answer_data[0];
@@ -42,7 +41,7 @@
 		//a variant collect
 		$count = 0;
 		$sql_select = "SELECT a FROM $quiz";
-		$result = mysqli_query($con, $sql_select);
+		$result = mysqli_query($connection_resource, $sql_select);
 		if(mysqli_num_rows($result) > 0){
 			while($a_data = mysqli_fetch_array($result)){
 				$variant[$count][0] = $a_data[0];
@@ -53,7 +52,7 @@
 		//b variant collect
 		$count = 0;
 		$sql_select = "SELECT b FROM $quiz";
-		$result = mysqli_query($con, $sql_select);
+		$result = mysqli_query($connection_resource, $sql_select);
 		if(mysqli_num_rows($result) > 0){
 			while($b_data = mysqli_fetch_array($result)){
 				$variant[$count][1] = $b_data[0];
@@ -64,7 +63,7 @@
 		//c variant collect
 		$count = 0;
 		$sql_select = "SELECT c FROM $quiz";
-		$result = mysqli_query($con, $sql_select);
+		$result = mysqli_query($connection_resource, $sql_select);
 		if(mysqli_num_rows($result) > 0){
 			while($c_data = mysqli_fetch_array($result)){
 				$variant[$count][2] = $c_data[0];
@@ -75,7 +74,7 @@
 		//d variant collect
 		$count = 0;
 		$sql_select = "SELECT d FROM $quiz";
-		$result = mysqli_query($con, $sql_select);
+		$result = mysqli_query($connection_resource, $sql_select);
 		if(mysqli_num_rows($result) > 0){
 			while($d_data = mysqli_fetch_array($result)){
 				$variant[$count][3] = $d_data[0];
