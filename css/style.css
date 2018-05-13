@@ -1,11 +1,11 @@
 
 /*layout*/
 @font-face {
-    font-family: Actor;
-    src: url(../fonts/Actor.ttf);
+    font-family: antic;
+    src: url(../fonts/antic.ttf);
 }
 p, label, li, h1, table{
-	font-family: Actor;
+	font-family: antic;
 }
 body{
 	margin: 0;
@@ -148,7 +148,7 @@ div.block form.reception ul li{
 	list-style: none;
 	padding-bottom: 10px;
 }
-div.block form.reception ul li input[type="text"],div.block form.reception ul li input[type="password"]{
+div.block form.reception ul li input[type="text"],div.block form.reception ul li input[type="password"], div.block form.reception ul li input[type="email"]{
 	width: 100%;
 }
 #heading{
@@ -267,7 +267,7 @@ button, input[type="submit"]{
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
-input[type="text"], input[type="password"], textarea{
+input[type="text"], input[type="password"], input[type="email"], textarea{
 	border-radius: 2px;
 	border: 1px solid gray;
 	box-shadow: 0px 1px 1px lightgray inset;
@@ -292,4 +292,20 @@ form[name="edit"] textarea[name="question"]{
 img.info_img{
 	max-width: 100%;
     height: auto;
+}
+#a, #b, #c, #d{
+	display: block;
+}
+#results{
+	display: none;
+	overflow: auto;
+}
+#results p{
+	margin: 0;
+}
+#results_title{
+	text-align: center;
+}
+#correct, #wrong, #empty, #spent_time, #total{
+	float: right;
 }
