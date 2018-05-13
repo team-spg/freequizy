@@ -1,1 +1,1 @@
-<img id="baner" src="img/6.png"/>
+<img id="baner" src="img/1.png"/>
