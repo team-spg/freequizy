@@ -5,7 +5,6 @@
 		header('location: sign_in.php');
 	}
 ?>
-
 <html>
 	<head>
 		<title>quiz</title>
@@ -16,18 +15,17 @@
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/search.js"></script>
+		<script type="text/javascript" src="js/modify.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div id = "load"></div>
 			<div id="content">
-				<?php include("widgets/head.php"); ?>
-				<?php include("widgets/baner.php"); ?>
-				<?php include("widgets/profile.php"); ?>
-				<?php include("widgets/list.php"); ?>
-				<?php include("widgets/team.php"); ?>
-				<?php include("widgets/footer.php"); ?>
+				<?php include("widgets/head.php") ?>
+				<?php include("widgets/baner.php") ?>
+				<?php include("widgets/modify.php"); ?>
+				<?php include("widgets/team.php") ?>
+				<?php include("widgets/footer.php") ?>
 			</div>
 		</div>
 	</body>

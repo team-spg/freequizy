@@ -16,7 +16,6 @@
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/search.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -24,8 +23,7 @@
 			<div id="content">
 				<?php include("widgets/head.php"); ?>
 				<?php include("widgets/baner.php"); ?>
-				<?php include("widgets/profile.php"); ?>
-				<?php include("widgets/list.php"); ?>
+				<?php include("widgets/info.php"); ?>
 				<?php include("widgets/team.php"); ?>
 				<?php include("widgets/footer.php"); ?>
 			</div>

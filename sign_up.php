@@ -1,11 +1,4 @@
-<?php 
-	include("widgets/server.php");
-	
-	if(empty($_SESSION['username'])){
-		header('location: sign_in.php');
-	}
-?>
-
+<?php include("widgets/server.php"); ?>
 <html>
 	<head>
 		<title>quiz</title>
@@ -16,18 +9,17 @@
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/search.js"></script>
+		<script type="text/javascript" src="js/register.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div id = "load"></div>
 			<div id="content">
-				<?php include("widgets/head.php"); ?>
-				<?php include("widgets/baner.php"); ?>
-				<?php include("widgets/profile.php"); ?>
-				<?php include("widgets/list.php"); ?>
-				<?php include("widgets/team.php"); ?>
-				<?php include("widgets/footer.php"); ?>
+				<?php include("widgets/head.php") ?>
+				<?php include("widgets/baner.php") ?>
+				<?php include("widgets/register.php") ?>
+				<?php include("widgets/team.php") ?>
+				<?php include("widgets/footer.php") ?>
 			</div>
 		</div>
 	</body>

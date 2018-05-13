@@ -4,6 +4,12 @@
 	if(empty($_SESSION['username'])){
 		header('location: sign_in.php');
 	}
+	if(empty($_SESSION['admin'])){
+		header('location: index.php');
+	}
+	if(isset($_SESSION['new_quiz'])){
+		header('location: editing.php');
+	}
 ?>
 
 <html>
@@ -16,7 +22,7 @@
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/search.js"></script>
+		<script type="text/javascript" src="js/create.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -24,8 +30,7 @@
 			<div id="content">
 				<?php include("widgets/head.php"); ?>
 				<?php include("widgets/baner.php"); ?>
-				<?php include("widgets/profile.php"); ?>
-				<?php include("widgets/list.php"); ?>
+				<?php include("widgets/create.php"); ?>
 				<?php include("widgets/team.php"); ?>
 				<?php include("widgets/footer.php"); ?>
 			</div>
