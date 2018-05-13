@@ -1,5 +1,5 @@
 <div class="block">
-	<p id="heading">Edit: <?php echo $_SESSION['new_quiz_message']; ?></p>
+	<p id="heading">Edit: <?php echo $_SESSION['edit_quiz_message']; ?></p>
 	<form action="editing.php" method="GET" name="edit">
 		<textarea name="question" rows="3" placeholder="Enter question ..."></textarea><br/>
 		<textarea name="a" rows="3" placeholder="Enter variant A) ..."></textarea>

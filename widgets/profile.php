@@ -1,5 +1,5 @@
 <div id="member">
-	<?php if (isset($_SESSION['username'])): ?>
+	<?php if(isset($_SESSION['username'])): ?>
 		<p id="teem_title">PROFILE</p>
 		<hr/>
 		<div class="member_block">

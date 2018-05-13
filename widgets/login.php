@@ -5,7 +5,7 @@
 			<label><li><input name="username" type="text" placeholder="Enter Name" value="<?php if(isset($_COOKIE['member_name'])){ echo $_COOKIE['member_name']; }?>"/></li><label>
 			<label><li><input name="password" type="password" placeholder="Enter Password" value="<?php if(isset($_COOKIE['member_password'])){ echo $_COOKIE['member_password']; }?>"/></li><label>
 			<label><li><input name="remember" type="checkbox" <?php if(isset($_COOKIE['member_name'])){ ?> checked <?php } ?>/> Remember me</li><label>
-			<label><li><input name="sign_in" type="submit" value="Sign in"/></li><label>
+			<label><li><input name="sign_in" type="submit" value="Sign in"/> <a href="password_recovery.php">Forgot password</a></li><label>
 			<label><li>No eccount? <a href="sign_up.php">Sign Up</a></li><label>
 		</ul>
 	</form>
