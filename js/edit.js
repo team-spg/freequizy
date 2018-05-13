@@ -1,5 +1,6 @@
 window.onload = function(){
 	document.forms["edit"].onsubmit = edit_check;
+	document.getElementById("btn_last_nav").onclick = about;
 }
 
 function edit_check(){
@@ -28,4 +29,8 @@ function edit_check(){
 		alert("Empty feald!");
 		return false;
 	}
+}
+
+function about(){
+	document.getElementById("teem").scrollIntoView();
 }

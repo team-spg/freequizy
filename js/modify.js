@@ -1,5 +1,6 @@
 window.onload = function(){
 	document.forms["modify"].onsubmit = modify;
+	document.getElementById("btn_last_nav").onclick = about;
 }
 
 function modify(){
@@ -10,4 +11,8 @@ function modify(){
 		alert("Password confirmation failed!");
 		return false;
 	}
+}
+
+function about(){
+	document.getElementById("teem").scrollIntoView();
 }
