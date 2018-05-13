@@ -94,25 +94,7 @@ div.authorization_block form{
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 	}
-	div.header button{
-		display: block;
-		border: 1px solid #111111;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-		box-shadow: 0px 1px 1px #7A7A7A inset;
-		outline: none;
-		text-shadow: 0px 1px 1px #111111;
-		padding-top: 5;
-		padding-bottom: 5;
-		padding-right: 10;
-		padding-left: 10;
-		margin-left: 0;
-		margin-top: -1px;
-		background: linear-gradient(to bottom, #2F2F2F, #222222);
-		width: 100%;
-	}
+	///From HEre
 	#btn_last_nav{
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
